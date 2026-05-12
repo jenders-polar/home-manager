@@ -1,22 +1,22 @@
-{ pkgs, ... }:
-let
+{ ... }: let
   nixvim = import (fetchGit {
     url = "https://github.com/nix-community/nixvim";
   });
-in
-{
+in {
   imports = [
     nixvim.homeModules.nixvim
 		./programs/nixvim.nix
+		./programs/direnv.nix
+		./programs/lazydocker.nix
+		./programs/lazygit.nix
+		./programs/btop.nix
   ];
+
   home.username = "jenders";
   home.homeDirectory = "/home/jenders";
   home.stateVersion = "23.11";
 
-  home.packages = [
-    pkgs.btop
-  ];
-
+  home.packages = [];
   home.file = {};
 
   home.sessionVariables = {
