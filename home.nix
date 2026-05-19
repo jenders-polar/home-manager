@@ -1,4 +1,4 @@
-{ ... }: let
+{ pkgs, ... }: let
   nixvim = import (fetchGit {
     url = "https://github.com/nix-community/nixvim";
   });
@@ -16,7 +16,9 @@ in {
   home.homeDirectory = "/home/jenders";
   home.stateVersion = "23.11";
 
-  home.packages = [];
+  home.packages = [
+		pkgs.devpod
+	];
   home.file = {};
 
   home.sessionVariables = {

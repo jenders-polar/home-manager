@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
 	programs.nixvim = {
 		enable = true;
 		colorschemes.tokyonight.enable = true;
@@ -63,7 +62,7 @@
 			web-devicons.enable = true;
 			hex.enable = true;
 			telescope.enable = true;
-
+			precognition.enable = true;
 
 			neo-tree = {
 				enable = true;
@@ -77,6 +76,7 @@
 			
 			lsp-format.enable = true;
 			lsp-lines.enable = true;
+			lsp-status.enable = true;
 
 			lsp = {
 				enable = true;
