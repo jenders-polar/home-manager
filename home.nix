@@ -18,7 +18,9 @@ in {
 
   home.packages = [
 		pkgs.devpod
+		pkgs.devenv
 	];
+
   home.file = {};
 
   home.sessionVariables = {
