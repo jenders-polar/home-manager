@@ -24,6 +24,8 @@ in
     pkgs.devenv
     pkgs.nixfmt
     pkgs.nixfmt-tree
+    pkgs.eza
+    pkgs.ripgrep
   ];
 
   home.file = { };
