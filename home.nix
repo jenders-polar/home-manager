@@ -13,6 +13,7 @@ in
     ./programs/lazygit.nix
     ./programs/btop.nix
     ./programs/fish.nix
+    ./programs/tmux.nix
   ];
 
   home.username = "jenders";
